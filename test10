@@ -1,0 +1,3 @@
+name_1 = "Victoria"
+name_2 = "University"
+print(name_1 + "  " + name_2)

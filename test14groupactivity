@@ -1,0 +1,6 @@
+college_name = "software engineering by victoria university polytechnic 123, 456"
+print(college_name.find("by"))
+
+names = "abcAd"
+print(names.isalpha())
+

@@ -1,0 +1,2 @@
+name = "victoria.university.software.engineering"
+print(name.split("."))

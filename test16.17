@@ -1,0 +1,6 @@
+# list = ["fruits","vegies","vegetarian","non_vegetarian",1,2,3,4]
+# (list.append("banana"))
+# print(list)
+
+mix_names = ["peter","parker","peter","arthur","john","smith","peter"]
+print(mix_names.count("peter"))

@@ -1,0 +1,2 @@
+course = "Software Engineering by Victoria University \nDigital Jobs"
+print(course)

@@ -1,0 +1,3 @@
+int = input("enter your string: ")
+print(int.count("e"))
+
