@@ -1,0 +1,4 @@
+#Create a script with a hard-coded string and use len() to display the number of characters in the string
+
+random_name = "life is beautiful just live it everyday happily"
+print(len(random_name))

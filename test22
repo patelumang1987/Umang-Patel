@@ -1,0 +1,4 @@
+# create a script that iterates through a for loop five times. Each time through the loop the numbers 2 through to 6 should be displayed. Use the range() method control the number of repetitions
+
+for a in range(2,7):
+    print(a)

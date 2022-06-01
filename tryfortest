@@ -1,0 +1,13 @@
+print("\n This program encrypts files?")
+choice = ''
+while choice != 'q':   
+    print("\n[1] Enter 1 to create an encryption key.")
+    print("[2] Enter 2 to …….")     
+    choice = input("\nMake your choice ")   
+    if choice == '1':
+        print("\n Enter a name for the encryption key \n")
+    elif choice == '2':
+        print("\n Encrypt the file \n")
+    else:
+        print("\nInvalid option, please try again.\n")
+print("Program exit.")

@@ -1,0 +1,3 @@
+def my_func(abc):
+    print(abc)
+my_func(123)

@@ -1,0 +1,6 @@
+a = int(input("please enter your number: "))
+total = 0
+while a < 9:
+    a += 1
+    total += a
+    print(total)

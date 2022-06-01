@@ -1,0 +1,18 @@
+# Create a script that asks for two numbers inputted from the command line, passes those two numbers as arguments to a function. The function will add the two numbers, and return the result to be printed by the main part of the script.
+
+def add_num(a,b):
+    sum=a+b
+    return sum
+ 
+num1=int(input("input the number one: "))
+num2=int(input("input the number two :"))
+print("The sum is",add_num(num1,num2))
+
+# or
+
+def add_num(a,b):
+    sum=a+b
+    return sum
+
+c = add_num(5,5)
+print(c)
