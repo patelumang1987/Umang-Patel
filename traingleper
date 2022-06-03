@@ -1,0 +1,15 @@
+# pseudo code
+
+# take first side
+# take second side
+# take third side
+# Add all three sides
+# print total
+
+
+
+s1 = int(input("enter first side: "))
+s2 = int(input("enter second side: "))
+s3 = int(input("enter third side: "))
+total = s1 + s2 + s3
+print("Triangle perimeter is :", total)

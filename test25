@@ -1,0 +1,3 @@
+name = "umang"
+last_name = "patel"
+print(f"hello {name} your last name is {last_name}")

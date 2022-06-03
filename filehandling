@@ -1,0 +1,17 @@
+myFile = open("myFile.txt", "r") #open in read mode
+# print(myFile.read())  		     #dump the entire file
+# myFile.close()
+
+myFile = open("myFile.txt", "a") #open in append mode
+myFile.write("\n i love my son")
+myFile.close()
+
+print(myFile.readline()) # to read first line
+
+# to read file in range
+
+import linecache
+x = linecache.getline("hello.txt", 2)
+print(x)
+
+
