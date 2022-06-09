@@ -1,0 +1,50 @@
+# Create Functions and define their actions for each selection we want to do.
+def add_file():
+    name = input("\nUser Name: ")
+    password = input("Password: ")
+    url = input("URL: ")
+    print("\nYour Credentials Has Been Saved")
+
+    f = open("notebook.txt", "a")
+    f.write("\n{}\n{}\n{}\n".format(name, password, url))
+    f.close()
+
+
+def read_file():
+    f = open("notebook.txt", "r")
+    print(f.read())
+    f.close()
+
+# create Text file if it doesnt exist.
+f = open("notebook.txt", "a")
+f.close()
+
+# Give user some Background.
+print("\nWelcome to Digicore Password Manager")
+
+# Set an initial value for selection other than the value for 'quit'.
+choice_user = " "
+
+# Start a loop that runs until the user enters the value for 'quit'.
+while choice_user != "3":
+
+    # Ask for the user's selection.
+    print("\n[1] Enter 1 to add your credentials")
+    print("[2] Enter 2 to view your credentials.")
+    print("[3] Enter 3 to Exit the program.")
+
+    # Respond to the user's selection.
+    choice_user = input("\nPlease Select from the options: ")
+
+    if choice_user == "1":
+        add_file()
+    elif choice_user == "2":
+        read_file()
+    elif choice_user == "3":
+        print("\nThank you for using Digicore Password Manager.\n")
+    else:
+        print("\nInvalid Selection. Please Select an option again.\n")
+        
+# Print a message that we are all finished.
+print("Thank you once again, See You next time.")
+
