@@ -1,24 +1,31 @@
+#importing module to Check if file is empty and print message if user view file with no Credentials in it.
+import os
+
 # Create Functions and define their actions for each selection we want to do.
 def add_file():
     name = input("\nUser Name: ")
     password = input("Password: ")
     url = input("URL: ")
-    print("\nYour Credentials Has Been Saved")
+    
 
     f = open("notebook.txt", "a")
-    # f.write("Username: {}\nPassword: {}\nURL: {}\n".format(name, password, url))
     f.write("\nUsername: {:<30}\tPassword: {:<30}\tURL: {:<30}".format(name, password, url))
     f.write("\n")
+    print("\nYour Credentials Has Been Saved")
     f.close()
 
 
 def read_file():
     f = open("notebook.txt", "r")
-    print(f.read())
+    file_path = "notebook.txt"
+    if os.stat(file_path).st_size == 0:
+        print('\nFile is empty So Please Add Your Credentials')
+    else:
+        print(f.read())
     f.close()
 
 
-# create Text file if it doesnt exist.
+# creates Text file.
 f = open("notebook.txt", "a")
 f.close()
 
@@ -27,6 +34,7 @@ print("\nWelcome to Digicore Password Manager")
 
 # Set an initial value for selection other than the value for 'quit'.
 choice_user = " "
+
 
 # Start a loop that runs until the user enters the value for 'quit'.
 while choice_user != "3":
@@ -46,7 +54,7 @@ while choice_user != "3":
     elif choice_user == "3":
         print("\nThank you for using Digicore Password Manager.\n")
     else:
-        print("\nInvalid Selection. Please Select an option again.\n")
+         print("\nInvalid Selection. Please Select an option again.\n")
         
 # Print a message that we are all finished.
 print("Thank you once again, See You next time.")
