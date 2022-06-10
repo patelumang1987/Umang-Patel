@@ -6,7 +6,9 @@ def add_file():
     print("\nYour Credentials Has Been Saved")
 
     f = open("notebook.txt", "a")
-    f.write("\n{}\n{}\n{}\n".format(name, password, url))
+    # f.write("Username: {}\nPassword: {}\nURL: {}\n".format(name, password, url))
+    f.write("\nUsername: {:<30}\tPassword: {:<30}\tURL: {:<30}".format(name, password, url))
+    f.write("\n")
     f.close()
 
 
@@ -14,6 +16,7 @@ def read_file():
     f = open("notebook.txt", "r")
     print(f.read())
     f.close()
+
 
 # create Text file if it doesnt exist.
 f = open("notebook.txt", "a")
