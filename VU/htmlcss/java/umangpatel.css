@@ -1,0 +1,407 @@
+
+input[type=tel]:invalid + span::after{
+    content: "✘";
+    color: red;
+
+}
+input[type=tel]:valid + span::after{
+    content:"✔";
+    color: green;
+    
+}
+
+#engbtn{
+    position: absolute;
+    top:2%;
+    left:87%;
+    width: 70px;
+    height:30px;
+    background-color: #fa0000;
+    color: white;
+    border-radius: 8px;
+    border: black 2px solid;
+    cursor: pointer;
+}
+
+#spabtn{
+    position: absolute;
+    top:2%;
+    left:93%;
+    width: 70px;
+    height:30px;
+    background-color: #fa0000;
+    color: white;
+    border-radius: 8px;
+    border: black 2px solid;
+    cursor: pointer;
+}
+
+
+#canvasheading{
+    position: absolute;
+    top:-4%;
+    left:31.5%;
+   font-size: 35px;
+   color: red;
+   font-family: cursive;
+ 
+}
+
+#demo{
+    position: absolute;
+    top:76%;
+    left:50%;
+    font-size: 0.5cm;    
+}
+
+#bline2{
+    position: absolute;
+    top:65.5%;
+    left:0.7%;
+}
+
+#bline1{
+    position: absolute;
+    top:30%;
+    left:0.7%;
+}
+
+input[type=file]::file-selector-button {
+   
+    border: 2px solid #9e91ff;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #a29bfe;
+    border: black 2.5px solid;
+    width: 80px;
+    height:35px;
+    border-radius: 8px;
+  }
+
+  input[type=file]::file-selector-button:hover {
+    background-color: #81ecec;
+    border: 2px solid #00cec9;
+    border: black 2.5px solid;
+    cursor: pointer;
+  }
+
+.smessage{
+    font-size: 17px;
+    display: inline-block;
+    color: #ffffff;
+    margin: 25px 25px;
+    padding: 5px 20px;
+}
+
+#formbtn1{
+    position: absolute;
+    top: 100%;
+    left: 1.3%;
+    width: 80px;
+    height: 35px;
+    background-color: #f882ee;
+    border: black 2.5px solid;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+#formbtn2{
+    position: absolute;
+    top: 100%;
+    left: 9%;
+    width: 80px;
+    height: 35px;
+    background-color:#000000;
+    color: white;
+    border: black 2.5px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+
+
+#form{
+    width: 90%;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: block;
+   
+}
+
+.formdesign input{
+    width: 27%;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: block;
+   
+}
+
+#drawCircle{
+    position: absolute;
+    top:10%;
+    left:22%;
+    width: 90px;
+    height:30px;
+    background-color: #ffef84;
+    border-radius: 8px;
+    border: black 2.5px solid;
+    cursor: pointer;
+}
+
+#randCircle{
+    position: absolute;
+    top:27.5%;
+    left:21.5%;
+    width: 107px;
+    height:30px;
+    background-color: #ffef84;
+    border-radius: 8px;
+    border: black 2.5px solid;
+    cursor: pointer;
+}
+
+#drawsquare{
+    position: absolute;
+    top:48%;
+    left:22%;
+    width:100px;
+    height:30px;
+    background-color: #ffef84;
+    border: black 2.5px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#drawline{
+    position: absolute;
+    top:83%;
+    left:22%;
+    width:100px;
+    height:30px;
+    background-color: #ffef84;
+    border: black 2.5px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#clearcanvas{
+    position: absolute;
+    top:83%;
+    left:38%;
+    width: 80px;
+    height:35px;
+    background-color: #97fea1;
+    border: black 2.5px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#Cy{
+    position: absolute;
+    top:27.5%;
+    left:10%;  
+
+}
+#Cylabel{
+    position: absolute;
+    top:27.5%;
+    left:8.5%;  
+}
+#Cx{
+    position: absolute;
+    top:23%;
+    left:10%;  
+}
+#Cxlabel{
+    position: absolute;
+    top:23%;
+    left:8.5%;  
+}
+#Cpalette{
+    position: absolute;
+    top:17.5%;
+    left:10.8%;  
+}
+#Cplabel{
+    position: absolute;
+    top:17.5%;
+    left:5%;
+}
+#Clpalette{
+    position: absolute;
+    top:12%;
+    left:10.8%;
+}
+#Cllabel{
+    position: absolute;
+    top:12.5%;
+    left:5%;
+}
+#Clinewidthslider{
+    position: absolute;
+    top:7.5%;
+    left:10%;
+}
+#Clinewidthsliderlabel{
+    position: absolute;
+    top:7.5%;
+    left:4%;
+}
+
+#Cslider{
+    position: absolute;
+    top:3%;
+    left:10%;
+}
+#Csliderlabel{
+    position: absolute;
+    top:3%;
+    left:6%;
+}
+
+#randomcirclepalette{
+    position: absolute;
+    top:22.5%;
+    left:23.5%;
+}
+
+#randomcirclepalettelabel{
+    position: absolute;
+    top:19%;
+    left:18%;
+}
+
+
+#Slinewidthslider{
+    position: absolute;
+    top:34%;
+    left:10%;
+}
+#Slinewidthsliderlabel{
+    position: absolute;
+    top:34%;
+    left:4%;
+}
+#Slpalette{
+    position: absolute;
+    top:38%;
+    left:10.8%;
+}
+#Slpalettelabel{
+    position: absolute;
+    top:38%;
+    left:5.5%;
+}
+#Spalette{
+    position: absolute;
+    top:43.5%;
+    left:10.8%;
+}
+#Spalettelabel{
+    position: absolute;
+    top:43.5%;
+    left:5.5%;
+}
+#Sx{
+    position: absolute;
+    top:49%;
+    left:10%;
+}
+#Sxlabel{
+    position: absolute;
+    top:49%;
+    left:8.5%;
+}
+#Sy{
+    position: absolute;
+    top:53.5%;
+    left:10%; 
+}
+#Sylabel{
+    position: absolute;
+    top:53.5%;
+    left:8.5%;
+}
+#Sw{
+    position: absolute;
+    top:58.5%;
+    left:10%; 
+}
+#Swlabel{
+    position: absolute;
+    top:58.5%;
+    left:8.5%;
+}
+#Sh{
+    position: absolute;
+    top:63%;
+    left:10%; 
+}
+#Shlabel{
+    position: absolute;
+    top:63%;
+    left:8.5%;
+}
+#linewidthslider{
+    position: absolute;
+    top:70%;
+    left:10%;
+}
+#llw{
+    position: absolute;
+    top:70%;
+    left:4%;
+}
+#lpalette{
+    position: absolute;
+    top:74%;
+    left:10.8%;
+}
+#lpalettelabel{
+    position: absolute;
+    top:74.5%;
+    left:5%;
+}
+#x{
+    position: absolute;
+    top:79.5%;
+    left:10%;
+}
+#lx{
+    position: absolute;
+    top:79.7%;
+    left:8.5%;
+}
+#endx{
+    position: absolute;
+    top:84%;
+    left:10%;
+}
+#lendx{
+    position: absolute;
+    top:84%;
+    left:6.5%;
+}
+#y{
+    position: absolute;
+    top:88.5%;
+    left:10%;
+}
+#ly{
+    position: absolute;
+    top:88.5%;
+    left:8.5%;
+}
+#endy{
+    position: absolute;
+    top:93.5%;
+    left:10%;
+}
+#lendy{
+    position: absolute;
+    top:93.5%;
+    left:6.5%;
+}   

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="umangpatel.css">
+
+
+<body>
+
+    <!-- Canvas Created -->
+
+    <div>
+        <div style="position:absolute; top: 70px; left: 450px;">
+            <canvas id="myCanvas" width="400" height="400" style="border: 2px solid black"></canvas>
+    </div>
+
+
+<!-- Heading and Instructions -->
+
+    <div>
+        <p id="canvasheading">Abstract Art Competition</p>
+        <p id="demo"><b>Instructions</b><br>
+            Use the Controls from the left pannel and create an Art.<br>Shapes can modified with tools in pannel.
+            <br>You can save canvas with right click on canvas. <br> To submit you must fill out form with image chosen
+            to submit.</p>
+    </div>
+    
+<!-- Created Registration Form -->
+
+    <div>
+        <form class="formdesign" action="process.php" id="form" style="position:absolute; left: 900px; top:62px;">
+            <div class="formdesign">
+                <label for="username">User Name:</label>
+                <input type="text" name="username" id="username" placeholder="user name" required>
+            </div>
+            <div class="formdesign">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email@email.com" required>
+            </div>
+            <div class="formdesign">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password" required>
+            </div>
+            <div class="formdesign">
+                <label for="confrm-password">Confirm Password:</label>
+                <input type="password" id="confrm-password" name="password" placeholder="re enter your password"
+                    required>
+            </div>
+            <div class="formdesign">
+                <label for="Phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" size="10" placeholder="your mobile number "
+                    pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+                <span>Format: xxxx-xxx-xxx </span>
+
+                 <!-- To show message in password based on the conditions -->
+
+            </div>
+            <p class="smessage" id="message"></p> 
+            <div>
+                <label id="mf" for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile" required>
+            </div>
+            <div class="button">
+                <input type="submit" value="Submit" onclick="checkPassword()" accept="" id="formbtn1">
+            </div>
+            <div class="button">
+                <input type="reset" value="Reset" id="formbtn2">
+            </div>
+
+        </form>
+    </div>
+
+
+<!-- Created buttons for drawing part and language and colour change-->
+
+        <div><button id="engbtn" onclick="toenglish()">English</button></div>
+        <div> <button id="spabtn" onclick="tospanish()">Spanish</button></div>
+        <div class="btn"><button id="drawCircle">Draw Circle</button></div>
+        <div class="btn"><button id="clearcanvas">Clear</button></div>
+        <div class="btn"><button id="drawsquare">Draw Square</button></div>
+        <div class="btn"><button id="drawline">Draw Line</button></div>
+        <div><button id="randCircle">Random Circle</button></div>
+
+        <!-- Tools for circle -->
+
+        <div>
+            <input type="range" id="Cslider" name="slider" min="0" max="400" value="50">
+            <label for="slider" id="Csliderlabel">Radius</label>
+        </div>
+        <div>
+            <input type="range" id="Clinewidthslider" name="slider" min="0" max="30" value="5">
+            <label for="slider" id="Clinewidthsliderlabel">Line Width</label>
+        </div>
+        <div>
+            <input type="color" id="Clpalette" name="palette" value="#09DAF6">
+            <label for="palette" id="Cllabel">Line Color</label>
+        </div>
+        <div>
+            <input type="color" id="Cpalette" name="palette" value="#E6F609">
+            <label for="palette" id="Cplabel">Fill Color</label>
+        </div>
+        <div>
+            <label for="x" id="Cxlabel">X</label>
+            <input type="number" id="Cx" name="x" min="0" max="400" value="200">
+        </div>
+        <div>
+            <label for="y" id="Cylabel">Y</label>
+            <input type="number" id="Cy" name="y" min="0" max="400" value="200">
+        </div><br>
+
+
+        <!-- Tools for Random circle -->
+
+        <div>
+            <input type="color" id="randomcirclepalette" name="palette" value="#002AFF">
+            <label for="palette" id="randomcirclepalettelabel">Fill Color for Random Circle</label>
+        </div>
+
+        <!-- Tools for square -->
+
+        <div>
+            <input type="range" id="Slinewidthslider" name="slider" min="0" max="30">
+            <label for="slider" id="Slinewidthsliderlabel">Line Width</label>
+        </div>
+
+        <div>
+            <input type="color" id="Slpalette" name="palette" value="#FA9E00">
+            <label for="palette" id="Slpalettelabel">line Color</label>
+        </div>
+
+        <div>
+            <input type="color" id="Spalette" name="palette" value="#FA1900">
+            <label for="palette" id="Spalettelabel">Fill Color</label>
+        </div>
+
+        <div>
+            <label for="x" id="Sxlabel">X</label>
+            <input type="number" id="Sx" name="x" min="0" max="400" value="50">
+        </div>
+
+        <div>
+            <label for="y" id="Sylabel">Y</label>
+            <input type="number" id="Sy" name="y" min="0" max="400" value="50">
+        </div>
+
+        <div>
+            <label for="w" id="Swlabel">W</label>
+            <input type="number" id="Sw" name="w" min="0" max="400" value="100">
+        </div>
+
+        <div>
+            <label for="h" id="Shlabel">H</label>
+            <input type="number" id="Sh" name="h" min="0" max="400" value="100">
+        </div>
+
+
+        <!-- Tools for Line -->
+
+        <div>
+            <input type="range" id="linewidthslider" name="slider" min="0" max="20" value="2">
+            <label for="slider" id="llw">Line Width</label>
+        </div>
+
+
+        <div>
+            <label for="x" id="lx">X</label>
+            <input type="number" id="x" name="x" min="0" max="400" value="200">
+        </div>
+        <div>
+            <label for="x" id="lendx">End X</label>
+            <input type="number" id="endx" name="x" min="0" max="400" value="50">
+        </div>
+
+
+        <div>
+            <label for="y" id="ly">Y</label>
+            <input type="number" id="y" name="y" min="0" max="400" value="200">
+        </div>
+        <div>
+            <label for="y" id="lendy">End Y</label>
+            <input type="number" id="endy" name="y" min="0" max="400" value="50">
+        </div>
+
+        <div>
+            <input type="color" id="lpalette" name="palette" value="#C400FA">
+            <label for="palette" id="lpalettelabel">Line Color</label>
+        </div>
+
+<!-- Created line to separate each drawing section -->
+
+        <div id="bline1">
+            _______________________________________________________
+        </div>
+ 
+        <div id="bline2">
+            _______________________________________________________
+        </div>
+
+</body>
+<script src="umangpatel.js"></script>
+</html>
